@@ -53,13 +53,13 @@ def Audio_Operations(path):
     FinalFE = Beginning + End
 
     #Saving the output
-    FinalFE.export(r'D:/College/Sem-7/Data Analytics/Labs/Practical 5/FinalFE.mp3', format="mp3")
+    FinalFE.export(r'D:/FinalFE.mp3', format="mp3")
 
     #Crossfade the audio
     WithStyle = Beginning.append(End, crossfade=1500)
 
     #Saving the output
-    WithStyle.export(r'D:/College/Sem-7/Data Analytics/Labs/Practical 5/Mashup.mp3', format="mp3")
+    WithStyle.export(r'D:/Mashup.mp3', format="mp3")
 
 
 #Generating synthetic audio from random numpy array
@@ -94,7 +94,7 @@ def Audio_10_Import(path):
     finalSong = finalSong.fade_out(30)
 
     #Exporting Final Song
-    finalSong.export(r'D:/College/Sem-7/Data Analytics/Labs/Practical 5/10CrossFaded.mp3', format="mp3")
+    finalSong.export(r'D:/10CrossFaded.mp3', format="mp3")
     print("Final Crossfaded Song Exported!!!")
 
 
@@ -116,19 +116,19 @@ def Speech_To_Text(path):
 
 
 #Importing and exporting audio
-Audio_Import(r'D:/College/Sem-7/Data Analytics/Labs/Practical 5/DanceMonkey.mp3')
+Audio_Import(r'D:/DanceMonkey.mp3')
 
 #Plotting the audio file in time series and frequency domain
-Audio_Plotting(r'D:/College/Sem-7/Data Analytics/Labs/Practical 5/CowMoo.wav')
+Audio_Plotting(r'D:/CowMoo.wav')
 
 #Different operations on audio file
-Audio_Operations(r'D:/College/Sem-7/Data Analytics/Labs/Practical 5/DanceMonkey.mp3')
+Audio_Operations(r'D:/DanceMonkey.mp3')
 
 #Generating synthetic audio
-Synthetic_Audio(r'D:/College/Sem-7/Data Analytics/Labs/Practical 5/SyntheticAudio.wav')
+Synthetic_Audio(r'D:/SyntheticAudio.wav')
 
 #Crossfading 10 songs in one audio file
-Audio_10_Import(r'D:/College/Sem-7/Data Analytics/Labs/Practical 5/10Songs/*.mp3')
+Audio_10_Import(r'D:/10Songs/*.mp3')
 
 #performing speech to text
-Speech_To_Text(r'D:/College/Sem-7/Data Analytics/Labs/Practical 5/AudioForSTT.wav')
+Speech_To_Text(r'D:/AudioForSTT.wav')
