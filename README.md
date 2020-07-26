@@ -1,6 +1,6 @@
 # Audio-Processing
-Programs related to audio in python
-Please change the path according your system
+- Programs related to audio in python
+- Please change the path according your system
 
 ## WorkingWithAudio.py
 
