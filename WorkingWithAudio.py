@@ -27,7 +27,7 @@ def Audio_Plotting(path):
 
     plt.subplot(212)
     plt.specgram(signalData, Fs=sampleFreq)
-    plt.xlabel('Time')
+    plt.xlabel('Amplitude')
     plt.ylabel('Frequncy')
     plt.title('Time Series Plot')
     plt.show()
